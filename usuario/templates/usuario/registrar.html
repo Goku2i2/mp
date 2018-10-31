@@ -1,0 +1,174 @@
+{% extends 'perris/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="container">
+
+  <div class="card-header titulo-login  ">
+   <h1 >Registro Adoptante</h1>
+  </div>
+  <div >
+     <form method="POST" class="needs-validation" novalidate >
+        {% csrf_token %}
+        <!--{{ form.as_p }}-->
+       <div class="row" >
+         <div class="col-12 col-mb-6 col-lg-6">
+             <div class="input-group mb-3">
+        <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+         <input type="text" id="=username" class="form-control"  placeholder="Nombre de usuario" name="username" required="required">
+            </div>
+         </div>
+
+         <div class="col-12 col-mb-6 col-lg-6">
+         <div class="input-group" >
+          <div class="input-group-prepend">
+                 <span class="input-group-text" id="basic-addon1">Rut</span>
+          </div>
+
+           <input type="text" id="=rut" class="form-control" id="validationCustom02" placeholder="Rut"  name="rut" required="required">
+           <div class="valid-feedback" >
+             ok!
+           </div>
+     </div>
+       </div>
+        </div>
+ 
+        <div class="row">
+          <div class="col-12 col-mb-6 col-lg-6">
+            <div class="form-group" >
+         <label for="email"></label>
+                <div class="input-group-prepend">
+
+        </div>
+                <span class="input-group-text" id="basic-addon1">Email</span>
+           <input type="email" class="form-control" id="validationCustom03" placeholder="Ingrese Email"  name="email"  required>
+           <div class="valid-feedback" >
+            ok!
+           </div>
+     </div>
+          </div>
+          <div class="col-12 col-mb-6 col-lg-6">
+            <div class="form-group" >
+         <label for="telefono"></label>
+                 <span class="input-group-text" id="basic-addon1">Teléfono</span>
+           <input type="text" class="form-control" id="validationCustom04" placeholder="Teléfono"  name="telefono" required="required">
+           <div class="valid-feedback" >
+             ok!
+           </div>
+     </div>
+          </div>
+        </div>
+ 
+     
+        <div class="row">
+          <div class="col-12 col-mb-6 col-lg-6">
+             <span class="input-group-text" id="basic-addon1">Región</span>
+         <select class="form-control" id="regiones" name="region"><optgroup label="This is a group"><option value="12" selected>This is item 1</option></optgroup></select>
+          </div>
+          <div class="col-12 col-mb-6 col-lg-6">
+               <span class="input-group-text" id="basic-addon1">Comuna</span>
+           <select class="form-control" id="comunas" name="comuna"><optgroup label="This is a group"><option value="12" selected>This is item 1</option></optgroup></select>
+          </div>
+        </div>
+     
+
+         
+ <div class="row casa-fecha">
+   <div class="col-12 col-mb-6 col-lg-6">
+     
+     <div class="form-group" >
+         <span class="input-group-text" id="basic-addon1">Tipo Vivienda</span>
+         <section class="input-field col s12">
+         <select id="tipovivienda" name="tipovivienda"> 
+            <option>Casa con patio grande</option>
+            <option>Casa con patio pequeño</option> 
+            <option>Casa sin patio</option>
+            <option>Departamento</option>
+         </select>
+          </section>
+           <div class="valid-feedback" >
+             ok!
+           </div>
+     </div>
+   </div>
+   <div class="col-12 col-mb-6 col-lg-6">
+       <span class="input-group-text" id="basic-addon1">Fecha Nacimiento</span>
+     <label>Fecha de Nacimiento : {{form.fecha}}</label>
+   </div>
+ </div>
+     
+    
+    <div class="row">
+      <div class="col-12 col-mb-6 col-lg-6">
+        <div class="input-group" >
+       <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1">Contraseña</span>
+                </div>
+          <input type="password" class="form-control"  name="password1" placeholder="Contraseña"  required>
+          <div class="valid-feedback" >
+            ok!
+          </div>
+    </div>
+ 
+      </div>
+     <div class="col-12 col-mb-6 col-lg-6">
+       <div class="input-group" >
+        <div class="input-group-prepend">
+                 <span class="input-group-text" id="basic-addon1">Contraseña</span>
+                </div>
+           <input type="password" class="form-control"  name="password2" placeholder="Confirmar Contraseña"  required>
+           <div class="valid-feedback" >
+            ok!
+           </div>
+     </div>
+     </div>
+ 
+    </div>
+           <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Aceptar términos y acuerdos
+      </label>
+      <div class="invalid-feedback">
+        Debe aceptar los términos antes de registrarse.
+      </div>
+    </div>
+  </div>
+    
+<br>
+     <center><div class="form-group">
+        <input type="submit" value="Registrarse"   class="btn btn-success" name="Registrarse">
+
+
+        <a  class="btn btn-secondary" href="{% url 'login' %}">Cancelar</a>
+      </div></center>
+ </form>
+    
+  </div>
+</div>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+<script src="{% static 'js/Regionycomuna.js' %}"></script>
+
+{% endblock %}

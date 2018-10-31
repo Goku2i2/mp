@@ -1,0 +1,52 @@
+{% extends 'perris/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="container">
+<div class="card formulario-perro">
+
+        <h1 class="titulo-agregar-perro ">Agregar Perro </h1>
+    <div class="row ">
+
+    <div class="col-lg-6 ">
+        <form method="POST" class="form-add" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>Foto : {{form.fotografia_perro}}</label>
+                <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Nombre</div>
+                </div>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre de Perro"  name="nombre_perro"  required>
+                      <div class="valid-feedback" >
+                        Listo
+                      </div>
+              </div>
+                <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Raza</div>
+                </div>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Raza"  name="raza_predominante"  required>
+                      <div class="valid-feedback" >
+                        Completado
+                      </div>
+              </div>
+               <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">description</i></div>
+                </div>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Descripción"  name="descripcion"  required>
+                      <div class="valid-feedback" >
+                        Completado
+                      </div>
+              </div>
+
+                <label>Estado : {{form.estado}}</label>
+       <a href="{%  url 'adm.inicio' %}" class="btn btn-info btn-cancelar" >Cancelar</a>
+     <button type='submit' class="save btn btn-info btn-cancelar">Guardar</button>
+    </form> 
+    
+
+    </div>
+</div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+
+{% extends 'perris/base.html' %}
+{% block content %}
+<div class="container">
+   <h1 class="animated fadeInLeft titulo-general"> Hola {{user.username}}, conoce a los perros disponibles</h1>
+  <div class="row">
+
+          {% for perro in perros %}
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="card tarjeta-perro animated bounceInUp">
+               {% if perro.fotografia_perro %}
+                <img  src="{{perro.fotografia_perro.url}}" class="img-responsive card-img-top" >
+            {% endif %}
+            <div class="card-body">
+              <h5 class="card-title">{{perro.nombre_perro}}</h5>
+              <p class="card-text text-truncate">{{ perro.descripcion }}</p>
+               
+              <div class="btn-group" role="group" aria-label="Basic example">
+              <button class="btn btn btn-outline-success ">Estado:{{perro.estado}}</button> 
+              <button  class="btn btn-primary" >  Raza : {{perro.raza_predominante}}</button>
+              <a class="btn btn btn-info" href="{% url 'login' %}"></i> Adoptar</a>
+             
+            </div>       
+                <!-- <button class="btn btn-secondary">Ver más</button>   -->           <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                 <!-- <a href="{% url 'detail_post_perro' pk=perro.pk %}" class="btn btn-secondary ver-mas">Ver Más</a>-->
+            </div>
+          </div>
+      </div>
+    
+         {% endfor %}
+
+  </div>
+</div>
+{% endblock %}

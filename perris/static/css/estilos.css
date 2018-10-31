@@ -1,0 +1,1143 @@
+
+img
+{
+	width: 40%;
+	height: 30%;
+}
+.inicio-registrar
+{
+
+	width: 100%;
+
+}
+
+.tarjeta-perro
+{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.contraseña-lista img
+{
+
+	text-align: center;
+	margin-left: 250px;
+}
+.titulo-contraseña
+{
+	text-align: center;
+
+}
+ .titulo-general
+
+
+ {
+ 	font-family: 'Arial';
+ }
+
+
+/* ---------- ADMINISTRADOR -------------*/
+.inicio-adm
+{
+
+}
+.titulo-administrador
+{
+	font-family: 'Arial';
+}
+.boton-postear
+{
+	float: right;
+}
+.nav
+{
+	background-color: #238763;
+}
+
+.titulo-agregar-perro
+{
+	font-family: 'Basic', sans-serif;
+}
+
+
+
+/* Estilos del Inicio Mis Perris */
+
+.barra
+{
+	/*border: 1px solid black;*/
+}
+.card-custom-wide {
+  overflow: hidden;
+  border: 0;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+}
+
+.card-custom-wide-img {
+  height: 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* First left setting is a fallback */
+.card-custom-wide .card-custom-avatar img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  position: absolute;
+  top: 20px;
+  left: 43.3%;
+  left: calc(50% - 75px);
+  width: 150px;
+  height: 150px;
+}
+
+.tarjeta
+{
+
+	margin-bottom: 20px;
+}
+.row
+{
+	margin-right: 0px;
+}
+
+.barra-navegacion
+{
+
+	background-color: #238763;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.logo-perris
+{
+
+	display: flex;
+	justify-content: center;
+
+}
+
+
+.logo-perris img
+{
+	cursor: pointer;
+}
+
+
+
+.barra-navegacion-contenido li a
+{
+	text-decoration: none;
+	color: white;
+
+}
+
+
+/* REDES SOCIALES */
+.redes-sociales
+{
+	/* border: 1px solid black; */
+	background-color: #238763;
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+
+
+}
+
+
+
+.redes-sociales img
+{
+
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	cursor: pointer;
+
+}
+
+
+
+/* ------- BOTON CAMPAÑAS -----*/
+button {
+	background-color: #238763;
+	border: 2px solid black;
+	font-size: 15px;
+}
+
+button p
+{
+	margin-top:2px;
+	margin-bottom: 2px;
+}
+
+footer
+{
+	background-color: #238763;
+}
+
+footer p
+{
+	margin-left: 30px;
+}
+
+
+/* ------------SLIDE DE IMAGENES ----------------- */
+.titulo-slide
+{
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	width: 100%;
+	margin-bottom: 90px;
+	background: #238763;
+	opacity: 0.8;
+	font-family: 'Kalam', cursive;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: white;
+}
+
+.form-add
+{
+	margin-left: 7px;
+
+
+}
+.btn-ingresar
+{
+	text-align: right;
+}
+.card-login
+{
+	margin-top: 5px;
+}
+.card-register
+{
+	margin-top: 5px;
+}
+.formulario-perro
+{
+	margin-top: 5px;
+}
+.card
+{
+	background-color: #238763;
+}
+.titulo-login
+{
+	background-color: #238763;
+	color: white;
+	text-align: left;
+}
+.titulo-register
+{
+	background-color: #238763;
+	color: white;
+	text-align: center;
+}
+.btn-cancelar
+{
+	margin-left: 7px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.input-group
+{
+	margin-top: 8px;
+}
+
+/* ---------------------------------------------------TAMAÑO EXTRA PEQUEÑO--------------------------- */
+
+@media (max-width: 540px)
+{
+	.hvr-underline-from-center:before
+	{
+		display: none;
+	}
+	.perro-imagen
+	{
+		display: none;
+	}
+	.redes-sociales-general
+	{
+		height:70px;
+
+
+	}
+	.redes-sociales-iconos
+	{
+		margin-top: 0px;
+		padding-top:0px;
+	}
+
+	.barra-navegacion-contenido
+	{
+		margin-top: 5px;
+		width:100%;
+		margin-bottom:5px;
+	}
+
+	.ver-mas
+{
+
+	margin-top: 5px;
+}
+
+
+
+	.barra-navegacion-contenido li
+	{
+		margin-top:2px;
+		padding-top:9px;
+		padding-bottom:9px;
+		background-color: #238763;
+		transition: 1s;
+
+
+
+
+	}
+	.barra-navegacion-contenido li:hover
+	{
+		background-color: #238763;
+		transition: 1s;
+	}
+
+		.barra-navegacion-contenido ul
+	{
+
+		list-style-type: none;
+		padding-left:0px;
+	   	text-align: center;
+	   	margin-bottom:6px;
+	   	width: 103%;
+
+
+
+	}
+
+
+	/* CONTENIDO */
+	.contenido
+	{
+		height:900px;
+
+	}
+
+	/* ---- RESCATE --- */
+		.rescate
+	{
+		height:400px;
+	}
+
+	.titulo-rescate
+	{
+		display: flex;
+		justify-content: flex-end;
+		font-size:30px;
+		font-weight: bold;
+	}
+
+	.subtitulo-rescate
+	{
+		margin-left:10px;
+		margin-bottom: 0px;
+		display: flex;
+		justify-content: flex-end;
+		font-size: 16px;
+
+	}
+
+	.descripcion-rescate
+	{
+		margin-left: 5px;
+		text-align: right;
+	}
+	.linea-rescate
+	{
+
+		width:60px;
+		height:1px;
+	  	background-color: black;
+	}
+
+	.imagen-rescate
+	{
+		float: right;
+		width: 250px;
+		height: 170px;
+
+	}
+
+	.crowfunding
+	{
+		height:440px;
+
+	}
+
+	.imagen-crowfunding
+	{
+		margin-top: 10px;
+		width: 280px;
+		height: 196px;
+		margin-left: 10px;
+
+	}
+
+	.titulo-crowfunding
+	{
+
+		font-size: 30px;
+		font-weight: bold;
+		margin-left: 5px;
+	}
+
+	.subtitulo-crowfunding
+	{
+
+		font-size: 16px;
+		margin-left: 5px;
+
+
+	}
+
+	.descripcion-crowfunding
+	{
+		text-align:left;
+		margin-left: 5px;
+
+	}
+
+	.linea-crowfunding
+	{
+
+		width:50px;
+		height:1px;
+	  	background-color: black;
+	  	margin-left:5px;
+	}
+	.galeria-imagenes
+	{
+		margin-top:0px;
+		background-color:  #238763;
+	}
+
+	.boton-campaña
+	{
+		margin-left:5px;
+
+	}
+
+	footer p
+	{
+		margin-left:15px;
+	}
+	.carousel-inner
+	{
+		height:220px;
+		width: 100%;
+	}
+	.columna-1 img
+	{
+		margin-left: 10px;
+		margin-top: 10px;
+
+	}
+
+	/* ------ GALERIA DE IMAGENES ---------*/
+	.galeria-imagenes
+	{
+
+		margin-top: 10px;
+	}
+	.imagen-1
+	{
+		width: 140px;
+		height: 90px;
+	}
+
+	.imagen-2
+	{
+		width: 120px;
+		height: 170px;
+	}
+	.imagen-3
+	{
+		width: 120px;
+		height: 150px;
+		margin-bottom:10px;
+	}
+	.imagen-4
+	{
+		width: 140px;
+		height: 90px;
+	}
+	.imagen-5
+	{
+		width: 120px;
+		height: 140px;
+		margin-bottom: 5px;
+	}
+	.imagen-6
+	{
+		width: 120px;
+		height: 140px;
+	}
+	.imagen-7
+	{
+		width: 140px;
+		height: 100px;
+	}
+	.columna-2 img
+	{
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+	.columna-3 img
+	{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+
+	.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+	}
+	#mygallery
+	{
+	display: none;
+	}
+
+	.clearfix {display: inline-block;}
+
+	/* Hides from IE-mac \*/
+	* html .clearfix {height: 1%;}
+	.clearfix {display: block;}
+	/* End hide from IE-mac */
+	}
+
+
+
+/* TAMAÑO PEQUEÑO */
+/* 540 o 576 REVISAR */
+@media (min-width: 540px)
+{
+
+
+		#mygallery
+	{
+	display: none;
+	}
+	.barra-navegacion-contenido
+	{
+		margin-top: 5px;
+		width:100%;
+
+	}
+	.perro-imagen
+	{
+		display: none;
+	}
+
+
+
+	.barra-navegacion-contenido li
+	{
+		margin-top:2px;
+		padding-top:9px;
+		padding-bottom:9px;
+		background-color: #238763;
+		transition: 1s;
+
+
+
+
+
+	}
+	.barra-navegacion-contenido li:hover
+	{
+		background-color: #238763;
+		transition: 1s;
+	}
+
+		.barra-navegacion-contenido ul
+	{
+
+		list-style-type: none;
+		padding-left:0px;
+	   	text-align: center;
+	   	margin-bottom:6px;
+	   	width: 101.5%;
+
+
+
+	}
+	/* CONTENIDO */
+	.contenido
+	{
+
+		height:950px;
+	}
+
+	/* ---- RESCATE --- */
+		.rescate
+	{
+		height: 400px;
+	}
+
+	.titulo-rescate
+	{
+		display: flex;
+		justify-content: flex-end;
+		font-size:30px;
+		font-weight: bold;
+		margin-left: 5px;
+	}
+
+	.subtitulo-rescate
+	{
+		display: flex;
+		font-size: 16px;
+		justify-content: flex-end;
+	}
+
+	.linea-rescate
+	{
+		width:60px;
+		height:1px;
+	  	background-color: black;
+	}
+
+	.descripcion-rescate
+	{
+		text-align: right;
+	}
+
+	.imagen-rescate
+	{
+		float: right;
+	}
+
+	/* --- Cowfunding -- */
+	.crowfunding
+	{
+		height: 400px;
+	}
+
+	.titulo-crowfunding
+	{
+		font-size: 30px;
+		font-weight: bold;
+		text-align: left;
+		margin-left: 5px;
+
+	}
+
+	.subtitulo-crowfunding
+	{
+		text-align: left;
+		font-size: 16px;
+		margin-left: 5px;
+	}
+
+	.linea-crowfunding
+	{
+
+		width:50px;
+		height:1px;
+	  	background-color: black;
+	  	margin-left:5px;
+	}
+
+	.descripcion-crowfunding
+	{
+		text-align: left;
+		margin-left: 5px;
+	}
+	.imagen-crowfunding
+	{
+		margin-left:5px;
+		width: 280px;
+		height: 196px;
+	}
+
+	.boton-campaña
+	{
+		margin-left:5px;
+		margin-top:30px;
+		display: flex;
+
+	}
+	/* GALERIA DE IMAGENES */
+	.imagen-1
+	{
+		width: 170px;
+		height: 120px;
+	}
+
+	.imagen-2
+	{
+		width: 150px;
+		height: 200px;
+	}
+	.imagen-3
+	{
+		width: 140px;
+		height: 200px;
+	}
+	.imagen-4
+	{
+		width: 170px;
+		height: 120px;
+	}
+	.imagen-5
+	{
+		width: 150px;
+		height: 170px;
+	}
+	.imagen-6
+	{
+		width: 140px;
+		height: 170px;
+	}
+	.imagen-7
+	{
+		width: 170px;
+		height: 120px;
+	}
+	.columna-1 img
+	{
+		margin-top:10px;
+	}
+	.columna-2 img
+	{
+
+		margin-top: 10px;
+		width: 160px;
+	}
+	.columna-3 img
+	{
+
+		margin-top: 10px;
+		width: 170px;
+	}
+
+	.galeria-imagenes
+	{
+
+		background-color:  #238763;
+	}
+
+	.columna-1
+	{
+
+		text-align: center;
+		margin-bottom: 5px;
+
+	}
+
+	.columna-2
+	{
+
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.columna-3
+	{
+
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+	.clearfix {display: inline-block;}
+
+	/* Hides from IE-mac \*/
+	* html .clearfix {height: 1%;}
+	.clearfix {display: block;}
+	/* End hide from IE-mac */
+
+
+			.ver-mas
+{
+
+	margin-top: 5px;
+}
+	}
+
+
+
+
+
+
+/* TAMAÑO MEDIO */
+
+
+
+@media (min-width: 768px)
+{
+
+	.perro-imagen
+	{
+		display: none ;
+	}
+
+	.hvr-underline-from-center:before
+	{
+		display: none !important;
+	}
+
+
+	.barra-navegacion-contenido
+	{
+		margin-top: 5px;
+		width:100%;
+
+	}
+
+
+
+	.barra-navegacion-contenido li
+	{
+		margin-top:2px;
+		padding-top:9px;
+		padding-bottom:9px;
+		background-color: #238763;
+		transition: 1s;
+
+
+
+
+	}
+
+
+		.barra-navegacion-contenido ul
+	{
+
+		list-style-type: none;
+		padding-left:0px;
+	   	text-align: center;
+	   	margin-bottom:6px;
+	   	width: 101%;
+
+
+
+
+	}
+	/* Contenido */
+	.contenido
+	{
+
+		height: 600px;
+	}
+	.rescate
+	{
+
+		height: 500px;
+
+	}
+	.imagen-rescate
+	{
+
+		width: 280px;
+		height: 180px;
+
+	}
+	.crowfunding
+	{
+
+		height: 500px;
+	}
+
+	.imagen-crowfunding
+	{
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+	.galeria-imagenes
+	{
+
+		height: 470px;
+	}
+
+	button
+	{
+		cursor: pointer;
+	}
+
+	.carousel-inner
+	{
+		height:400px;
+		width: 100%;
+	}
+
+	#mygallery
+	{
+	display: inline;
+	}
+		.ver-mas
+		{
+
+			margin-top: 0px;
+		}
+
+
+}
+
+
+
+
+
+/* TAMAÑO LARGO */
+
+@media (min-width: 992px)
+{
+		.contenido
+		{
+
+			height: 500px;
+		}
+
+		.perro-imagen
+		{
+		display: inline;
+		position: absolute;
+	    width: 700px;
+	    height: 300px;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    margin: auto;
+
+		}
+		.centrador
+		{
+		position: relative;
+	  width: 400px;
+	  height: 300px;
+	  background-color: #238763;
+		}
+
+		.barra-navegacion
+		{
+			height: 85px;
+			background-color: #238763;
+		}
+		.barra-navegacion img
+		{
+			margin-top: 10px;
+			margin-left: 5px;
+			padding-bottom: 10px;
+			width: 290px;
+			height: 70px;
+
+		}
+
+		.logo-perris
+		{
+
+			float: left;
+
+		}
+
+		.barra-navegacion-contenido li
+		{
+			float: left;
+			margin-left: 10px;
+			display: inline;
+   			text-align: center;
+   			margin: 0 10px 0 0;
+   			margin-top: 0px;
+   			height: 70px;
+   			background: none;
+		}
+
+
+		.barra-navegacion-contenido ul{
+			   list-style-type: none;
+			   text-align: center;
+			   width: 570px;
+			   margin-left: 130px;
+
+			}
+
+		.barra-navegacion-contenido li a {
+			   padding: 2px 7px 2px 7px;
+			   background-color: 238763;
+			   text-decoration: none;
+			   font-size: 17px;
+
+			}
+		.carousel-item{
+		    height: 400px;
+
+		}
+		.carousel-item img{
+		  min-height: 400px;
+
+
+		}
+
+
+
+		.imagen-crowfunding
+		{
+
+			margin-top: 10px;
+			margin-left:10px;
+		}
+
+		.galeria-imagenes
+		{
+			display: none;
+		}
+		footer
+		{
+			height:150px;
+		}
+
+			#mygallery
+		{
+			display: block !important;
+		}
+
+
+
+}
+
+
+/* TAMAÑO EXTRA LARGO */
+@media (min-width: 1200px)
+{
+
+	.contenido
+	{
+
+		height: 470px;
+
+	}
+
+	.galeria-imagenes
+	{
+		background-color:  #238763;
+	}
+	.carousel-item{
+	    height: 400px;
+
+	}
+	.carousel-item img{
+	  min-height: 800px;
+
+
+	}
+
+
+		#mygallery
+	{
+		display: block !important;
+	}
+
+
+
+
+}
+
+
+
+/* RESTABLECER CONTRASEÑA */
+.restablecer_contrasena
+{
+
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/perro_ventana_2.jpg");
+}
+
+.imagen-reset
+{
+	height: 500px;
+	width: 100%;
+}
+
+
+
+/* AGREGAR PERRO */
+.titulo-agregar-perro
+{
+	background-color: #238763;
+	color: #238763;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+
+.mensajes
+{
+
+	margin-top: 5px;
+
+}
+.fila-eliminar
+{
+	margin-top: 5px;
+	align-content: center;
+}
+
+.fila-eliminar-1
+{
+	text-align: center;
+}
+
+.casa-fecha
+{
+
+	margin-top:10px;
+}
+

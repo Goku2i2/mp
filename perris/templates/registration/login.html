@@ -1,0 +1,82 @@
+
+{% extends 'perris/base.html' %}
+{% block content %}
+<br><br>
+<br>
+</br>
+<div class="container">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	<div >
+		<div class="col-12 col-mb-6 col-lg-12">
+			<div class="card card-deck">
+  <div class="card-header ">
+  <h1>Login Usuario</h1>
+  </div>
+  <div class="card-body">
+  	<!--Mensaje de Error-->
+			{% if form.errors %}
+			    <div class="alert alert-warning" role="alert">
+			 		 El nombre de usuario no coincide. Ingresa uno válido
+				</div>
+			{% endif %}
+			
+		   <form method="POST" class="needs-validation" novalidate>
+						{% csrf_token %}
+						<div class="input-group" >
+							<div class="input-group-prepend">
+                  <div class="input-group-text"></div>
+                </div>
+						      <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre de Usuario"  name="username"  required>
+						      <div class="valid-feedback" >
+						        ok!
+						      </div>
+						</div>
+						<div class="input-group" >
+									<div class="input-group-prepend">
+                  <div class="input-group-text"></div>
+                </div>
+						      <input type="password" class="form-control" id="validationCustom02" name="password" placeholder="Contraseña"  required>
+						      <div class="valid-feedback" >
+						       ok!
+						      </div>
+						</div>
+						<div class="form-group btn-ingresar" >
+							<!--<a href="{% url 'password_reset' %}" class="btn btn-info">Recordar Contraseña</a>-->
+							<input type="submit" value="Ingresar"  class="btn btn-success" name="">
+						</div>
+					</form>
+		    
+  </div>
+</div>
+		</div>
+	</div>
+</div>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+{% endblock %}

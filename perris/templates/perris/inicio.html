@@ -1,0 +1,65 @@
+{% extends 'perris/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="">
+	
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+   <div class="carousel-inner">
+  	{% for perro in perros %} 
+    <div {% if forloop.first %} class="carousel-item active" {% else %} class="carousel-item" {% endif %}>
+       <img  src="{{perro.fotografia_perro.url}}" class="img-responsive card-img-top" >
+
+        <div class="carousel-caption ">
+		    <p class="titulo-slide rounded"> {{perro.descripcion}}</p>
+		    <button href="" class=" btn-success">ESTADO : {{perro.estado|upper}}</button>
+		  </div>
+    </div>
+   
+     {% endfor %}
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	<!--REDES SOCIALES -->
+	<section class="row redes-sociales redes-sociales-general" >
+		<section class="redes-sociales redes-sociales-iconos" >
+			<a href="https://www.facebook.com/" target="_blank" class="icon-facebook-with-circle hvr-bob"></a>
+			<a href="https://plus.google.com/discover" target="_blank" class="icon-google-plus3 hvr-bob"></a>
+			<a href="https://www.instagram.com/" target="_blank" class="icon-instagram-with-circle hvr-bob"></a>
+			<a href="https://www.gmail.com/" target="_blank" class="icon-mail4 hvr-bob"></a>
+		</section>
+	</section>
+	<!--CONTENIDO GENERAL-->
+	<section class="row  contenido" >
+		<!--RESCATE-->
+		<section class="col-12 col-sm-12 col-md-12 col-lg-6 rescate" >
+			<p class="titulo-rescate" >RESCATE</p>
+			<p class="subtitulo-rescate">Etapa Uno</p>
+			<hr align="right" class="linea-rescate" >
+			<p  class="descripcion-rescate" >Rescatamos perros en situacion de peligro y/o abandono.Los rehabilitamos y los preparamos para buscarles un hogar.</p>
+			<img class="imagen-rescate rounded" src="{% static 'img/rescate.jpg' %}" alt="imagen-recate-1">
+		</section>
+		<!--CROWFUNDING-->
+		<section class="col-12 col-sm-12 col-md-12 col-lg-6 crowfunding" >
+			<img class="imagen-crowfunding rounded" src="{% static 'img/crowfunding.jpg' %}" alt="imagen-crowfunding-1">
+			<p class="titulo-crowfunding" >CROWFUNDING</p>
+			<p class="subtitulo-crowfunding">FINANCIAMIENTO</p>
+			<hr class="linea-crowfunding" >
+			<p class="descripcion-crowfunding">Sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades que realizamos para obtener financiamiento para seguir ayudando.</p>
+			
+			<a class="boton-campaña hvr-grow" href="#"><button ><strong><p>CAMPAÑAS</p></strong></button></a>
+		</section>
+	</section>
+</div>
+{% endblock %}
