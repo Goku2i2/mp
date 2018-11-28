@@ -11,6 +11,7 @@ urlpatterns = [
     url('perris/inicio', views.redirigir, name="redirigir"),
     #URL DE LOGIN - Registrar
     url('perris/login', views.login , name="login"),
+    url(r'^auth/', include('social_django.urls', namespace='social')),  # <- Here
     #URL DE Perros Disponibles
     url('perris/disponibles', views.perros_disponibles , name="perros_disponibles"),
     url('administrador',views.administrador_inicio, name="adm.inicio" ),
@@ -24,6 +25,8 @@ urlpatterns = [
     #URL Para editar un Post del Perro Rescatado 
     
     path('perro/<int:pk>/editar/', views.edit_post_perro, name='edit_post_perro'),
+    
+    url(r'^api-auth/', include('rest_framework.urls'))
 
  
 

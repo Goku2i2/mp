@@ -59,12 +59,12 @@
       </li>
 
       <li class=" form-inline my-2 my-lg-0">
-        <a class="nav-link text-white" href="{% url 'perros_disponibles' %}">Diponibles</a>
+        <a class="nav-link text-white" href="{% url 'perros_disponibles' %}">Perris Diponibles</a>
       </li>
       <li class="form-inline my-2 my-lg-0">
         {% if user.is_authenticated %}
          {% if user.username == "admin" %}
-          <a  href="{% url 'adm.inicio' %}">Administración</a>
+          <a  href="{% url 'adm.inicio' %}">Administrar Perros</a>
         {% else  %}
           
          {% endif %}

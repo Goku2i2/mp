@@ -2,12 +2,12 @@
 {% extends 'perris/base.html' %}
 {% block content %}
 <div class="container">
-   <h1 class="animated fadeInLeft titulo-general"> Hola {{user.username}}, conoce a los perros disponibles</h1>
+   <h1> Hola {{user.username}}, conoce a los perros disponibles</h1>
   <div class="row">
 
           {% for perro in perros %}
           <div class="col-12 col-md-6 col-lg-6">
-            <div class="card tarjeta-perro animated bounceInUp">
+            <div class="">
                {% if perro.fotografia_perro %}
                 <img  src="{{perro.fotografia_perro.url}}" class="img-responsive card-img-top" >
             {% endif %}

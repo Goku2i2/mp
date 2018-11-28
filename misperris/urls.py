@@ -45,6 +45,7 @@ urlpatterns = [
          name='password_reset_complete'),  
     #Importamos las URL de el directorio USUARIO
     path('usuario/', include('usuario.urls')),  
+    url(r'^auth/', include('social_django.urls', namespace='social')),  # <- Here
 ]   
 
 urlpatterns +=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
