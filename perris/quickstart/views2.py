@@ -1,3 +1,6 @@
+from django.contrib.auth.models import User, Group
+from rest_framework import viewsets
+from perris.quickstart.serializers import UserSerializer, GroupSerializer
 from django.shortcuts import render
 from django.utils import timezone
 from django.shortcuts import render, get_object_or_404
@@ -13,10 +16,20 @@ from perris.forms import Perro_RescatadoForm
 #Para redirigir las vistas 
 from django.contrib.auth.decorators import login_required, permission_required
 
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = User.objects.all().order_by('-date_joined')
+    serializer_class = UserSerializer
 
-
-# Create your views here.
-#Devolver a la pagina de inicio
+class GroupViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
+    
 def inicio(request):
 	# Se van agregar los post a la platilla.html
     perros = Perros_Rescatados.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
