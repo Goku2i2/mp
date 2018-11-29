@@ -1,8 +1,9 @@
 {
     "name": "Mis Perris",
+    "short_name":"Perris",
     "description":"Aplicación para adopción de perros",
     "start_url": "/",
-    "display": "fullscreen",
+    "display": "standalone",
     "icons": [
         {
             "src": "img/logo.png",
