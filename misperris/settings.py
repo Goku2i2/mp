@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'coverage',
     'rest_framework',
     'social_django',
-    'pwa'
+    'pwa',
+    
 ]
 
 MIDDLEWARE = [

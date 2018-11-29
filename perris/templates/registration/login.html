@@ -18,13 +18,16 @@
 		<div class="col-12 col-mb-6 col-lg-12">
 			<div class="card card-deck">
   <div class="card-header ">
-	<h1>Login Usuario</h1>
-	<h1></h1><a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a><br><h1>
+	<!--<h1>Login Usuario</h1>-->
+	<p><strong>Google</strong></p>
+	<h1><a href="{% url 'social:begin' 'google-oauth2' %}" class="btn btn-info">Login con Google</a><br></h1>
+	
 	</div>
 
   
 
   <div class="card-body">
+			<h1>Login Usuario</h1>
   	<!--Mensaje de Error-->
 			{% if form.errors %}
 			    <div class="alert alert-warning" role="alert">
@@ -57,6 +60,7 @@
 							<input type="submit" value="Ingresar"  class="btn btn-success" name="">
 						</div>
 					</form>
+					
 		    
   </div>
 </div>
