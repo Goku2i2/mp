@@ -19,6 +19,8 @@ from django.conf.urls import include, url
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
+from django.contrib.auth import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'', include('perris.urls')),
@@ -44,6 +46,7 @@ urlpatterns = [
          ),
          name='password_reset_complete'),  
     #Importamos las URL de el directorio USUARIO
+
     path('usuario/', include('usuario.urls')),  
     url(r'^auth/', include('social_django.urls', namespace='social')),  # <- Here
 ]   

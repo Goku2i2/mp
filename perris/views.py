@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.utils import timezone
 from django.shortcuts import render, get_object_or_404
 from django.shortcuts import redirect
+
 #MENSAJES
 from django.contrib import messages
 #Importamos los modelos de los perros
@@ -21,6 +22,10 @@ def inicio(request):
     perros = Perros_Rescatados.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'perris/inicio.html',  {'perros': perros})
        
+
+
+def home(request):
+	return render(request, 'inicio.html')
 
 
 

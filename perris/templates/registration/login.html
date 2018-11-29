@@ -1,5 +1,6 @@
 
 {% extends 'perris/base.html' %}
+
 {% block content %}
 <br><br>
 <br>
@@ -17,8 +18,12 @@
 		<div class="col-12 col-mb-6 col-lg-12">
 			<div class="card card-deck">
   <div class="card-header ">
-  <h1>Login Usuario</h1>
-  </div>
+	<h1>Login Usuario</h1>
+	<h1></h1><a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a><br><h1>
+	</div>
+
+  
+
   <div class="card-body">
   	<!--Mensaje de Error-->
 			{% if form.errors %}
