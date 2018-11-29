@@ -14,6 +14,8 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'perris/static/js', 'serviceworker.js')
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'perris/static/js', 'serviceworker2.js')
 
 
 # Quick-start development settings - unsuitable for production
@@ -42,6 +44,7 @@ INSTALLED_APPS = [
     'coverage',
     'rest_framework',
     'social_django',
+    'pwa'
 ]
 
 MIDDLEWARE = [
@@ -138,16 +141,19 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-#para que acepte Django subir archivos 
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-LOGOUT_REDIRECT_URL = 'redirigir'
+
 LOGOUT_REDIRECT_URL = 'inicio'
+LOGIN_REDIRECT_URL = 'inicio'
 LOGIN_URL = 'login'
 
-#Configuracion del email
+
+
+
 
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='411258282819-4h751l34kfmt2b3q102eu5vllos7ciov.apps.googleusercontent.com'  #Paste CLient Key

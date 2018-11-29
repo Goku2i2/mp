@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 <html>
+    {% load pwa %}
+    {% load static %}
+
 <head>
+    {% progressive_web_app_meta %}
+   
   <title></title>
   <link rel="stylesheet" href="{% static 'usuario/css/style2.css' %}">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -36,6 +41,8 @@
   }
   </style>
 <body>
+
+  
 <!-- Barra de navegacion-->
 
 

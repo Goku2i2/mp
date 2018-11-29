@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'', include('perris.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
+    url('^accounts/', admin.site.urls),
     path('password-reset/',
          auth_views.PasswordResetView.as_view(
              template_name='registration/password_reset.html'
@@ -46,9 +47,11 @@ urlpatterns = [
          ),
          name='password_reset_complete'),  
     #Importamos las URL de el directorio USUARIO
-
+    
     path('usuario/', include('usuario.urls')),  
     url(r'^auth/', include('social_django.urls', namespace='social')),  # <- Here
+    path('', include('pwa.urls')),
+    
 ]   
 
 urlpatterns +=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
